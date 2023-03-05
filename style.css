@@ -147,7 +147,7 @@ nav svg {
   background-size: cover;
   position: relative;
   height: 900px;
-
+  z-index: 0;
   box-sizing: border-box;
 }
 
