@@ -11,7 +11,9 @@
 }
 
 body {
-  background-color: #4f5b66;
+  margin: 0
+  overflow-x: hidden;
+  height: 5000px;
 }
 
 header {
@@ -145,6 +147,8 @@ nav svg {
   background-size: cover;
   position: relative;
   height: 900px;
+
+  box-sizing: border-box;
 }
 
 
