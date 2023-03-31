@@ -11,9 +11,15 @@
 }
 
 body {
+<<<<<<< HEAD
   margin: 0px;
   padding: 0px;
   background-color: black;
+=======
+  margin: 0
+  overflow-x: hidden;
+  height: 5000px;
+>>>>>>> 7bc603835175b7781e5c3eeeb5224445dddcc4b1
 }
 
 header {
@@ -160,6 +166,12 @@ nav svg {
 .about {
   background-color: red;
   position: relative;
+<<<<<<< HEAD
+=======
+  height: 900px;
+  z-index: 0;
+  box-sizing: border-box;
+>>>>>>> 7bc603835175b7781e5c3eeeb5224445dddcc4b1
 }
 
 
