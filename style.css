@@ -11,19 +11,21 @@
 }
 
 body {
-  background-color: #4f5b66;
+  margin: 0px;
+  padding: 0px;
+  background-color: black;
 }
 
 header {
-
   width: 100%;
   display: block;
-  margin-left: 0;
-  margin-right: 0;
+  margin: 0px;
+  padding: 0px;
+  z-index: 0;
 }
 
 .sticky {
-  position: fixed;
+  position: relative;
   top: 0;
   width: 100%
 }
@@ -40,6 +42,7 @@ nav {
   width: 96%;
   justify-self: center;
   position: relative;
+  margin: 0px;
 }
 
 nav svg {
@@ -47,14 +50,12 @@ nav svg {
   width: 400px;
   position: absolute;
   top: .4em;
+  margin: 0px;
 }
 
 #primary-nav {
-    float: right;
-}
-
-#primary-nav {
-    background-color: #4f5b66;
+  float: right;
+  background-color: #4f5b66;
 }
 #nav-toggle {
   opacity: 0;
@@ -74,8 +75,9 @@ nav svg {
   right: 0 !important;
 }
 .nav-btn {
+  vertical-align: center;
   position: absolute;
-  top: 4.4em;
+  top: 4em;
   bottom: 4.5em;
   right: 40px;
   width: 26px;
@@ -136,15 +138,28 @@ nav svg {
 }
 
 .welcome {
-  background-image: url(Img/home-bkgnd.png);
-  height: 100vh;
-  background-position: left bottom;
+  background-image: linear-gradient(to bottom, black, #529EC8);
+  position: absolute;
+  width: 100%;
+  height: 75%;
+  margin: 0px;
+  padding: 0px;
+  font-size: 300%;
+  text-align: center;
+  justify-content: center;
+}
 
-  background-position: left;
-  background-repeat: no-repeat;
-  background-size: cover;
+.welcome h1, q {
+  color: black;
+}
+
+#quote {
+  margin: 20%;
+}
+
+.about {
+  background-color: red;
   position: relative;
-  height: 900px;
 }
 
 
