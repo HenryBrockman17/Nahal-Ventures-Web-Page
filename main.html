@@ -1,41 +1,167 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <script src="main.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';">
-</head>
-<body>
-    <header id="header-full">
-        <nav>
-    
-            <svg id="brand" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 300" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"><g transform="translate(-15 0)"><path d="M75,225v-150h150v150h-150Z" fill="none" stroke="#293e61" stroke-width="0"/><polygon points="-47.056032,-131.165542 2.943968,10.40116 -47.056032,10.40116 -47.056032,10.401152" transform="matrix(1 0 0 0.882976 122.056032 215.816018)" fill="#529ec8" stroke-width="0"/><polygon points="66.66723,32.057665 66.66723,31.667736 66.66723,156.667736 16.66723,32.057665 66.66723,32.057665" transform="translate(158.33277 43.332264)" fill="#3b568c" stroke-width="0"/><polygon points="100,192.584121 100,192.584121 37.397001,192.584114 -22.602999,42.974057 40,42.974057" transform="translate(111.3015 32.220911)" fill="#3b568c" stroke-width="0"/></g><text dx="0" dy="0" font-family="&quot;emG9M5Dnxzu1:::Noto Serif&quot;" font-size="100" font-weight="400" transform="translate(240 188.612412)" fill="#529ec8" stroke-width="0"><tspan y="0" font-weight="400" stroke-width="0"><![CDATA[Nahal Ventures]]></tspan></text>
-            </svg>
-            <div class="hamburger-menu">
-                <input id="nav-toggle" type="checkbox" />
-                <label class="nav-btn" for="nav-toggle">
-                <span></span>
-                </label>
-    
-                <ul class="nav-box">
-                <li><a class="nav-item" href="#"><h3>Home</h3></a></li>
-                <li><a class="nav-item" href="#"><h3>Our Mission</h3></a></li>
-                <li><a class="nav-item" href="#"><h3>Team</h3></a></li>
-                <li><a class="nav-item" href="#"><h3>Portfolio</h3></a></li>
-                <li><a class="nav-item" href="#"><h3>Contact Us</h3></a></li>
-                </ul>
-            </div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Nahal Ventures is a private investment vehicle focused on selective, long-term capital allocation."
+    />
+    <title>Nahal Ventures</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <div class="site-shell" aria-hidden="true">
+      <div class="ambient ambient-water"></div>
+      <div class="ambient ambient-fog"></div>
+      <div class="ambient ambient-city"></div>
+    </div>
+
+    <header class="topbar">
+      <div class="container nav-wrap">
+        <a href="#home" class="brand" aria-label="Nahal Ventures home">
+          <img src="Img/logo.png" alt="Nahal Ventures logo" class="brand-logo" />
+          <span class="brand-wordmark">Nahal Ventures</span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="siteNav">
+          <span></span><span></span><span></span>
+          <span class="sr-only">Open navigation menu</span>
+        </button>
+
+        <nav id="siteNav" class="site-nav" aria-label="Main navigation">
+          <a href="#home">Home</a>
+          <a href="#approach">Approach</a>
+          <a href="#focus">Focus</a>
+          <a href="#contact">Contact</a>
+          <a href="investor-login.html" class="investor-link">Investor Login</a>
         </nav>
+      </div>
     </header>
-    <section class="welcome">
-        <div id="quote">
-            <h1>Dare To Succeed</h1>
-            <q>The only thing you have to fear is fear itself</q>
+
+    <main>
+      <section id="home" class="hero section">
+        <div class="container hero-grid fade-in">
+          <div class="hero-copy">
+            <p class="eyebrow">Private Investment Vehicle</p>
+            <h1>Patient Capital, Independent Judgment, Enduring Orientation.</h1>
+            <p class="hero-subhead">
+              Nahal Ventures is a private investment vehicle with a long-term perspective,
+              focused on disciplined capital allocation across durable businesses and select
+              strategic opportunities.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#approach">Learn More</a>
+              <a class="btn btn-secondary" href="investor-login.html">Investor Access</a>
+            </div>
+          </div>
+          <aside class="hero-panel" aria-label="Firm profile highlight">
+            <img src="Img/logo.png" alt="Nahal Ventures emblem" class="hero-logo" />
+            <p>Seattle-rooted perspective with a global investment lens.</p>
+            <ul>
+              <li>Long-duration underwriting mindset</li>
+              <li>Selective, relationship-driven partnerships</li>
+              <li>Flexible mandate across stages and structures</li>
+            </ul>
+          </aside>
         </div>
-    </section>
-    <section class="about">
-        <div><h1>Hello</h1></div>
-    </section>
-</body>
+      </section>
+
+      <section id="approach" class="section">
+        <div class="container narrow fade-in">
+          <p class="section-kicker">Approach</p>
+          <h2>Measured in decades, not quarters.</h2>
+          <p>
+            Our philosophy is intentionally focused: preserve optionality, deploy selectively,
+            and concentrate where conviction is earned through deep research. We favor
+            partnerships defined by alignment, integrity, and a shared commitment to building
+            enduring value.
+          </p>
+          <p>
+            We remain open to opportunities in technology, infrastructure, software, and other
+            durable business models where fundamentals are resilient and asymmetry is
+            attractive.
+          </p>
+        </div>
+      </section>
+
+      <section id="focus" class="section">
+        <div class="container fade-in">
+          <p class="section-kicker">Areas of Interest</p>
+          <h2>Focused breadth across durable themes.</h2>
+          <div class="focus-grid">
+            <article class="glass-card">
+              <h3>Technology</h3>
+              <p>Platforms and tools with structural relevance and long runway potential.</p>
+            </article>
+            <article class="glass-card">
+              <h3>Data &amp; AI</h3>
+              <p>Data-rich systems and applied intelligence with defensible economics.</p>
+            </article>
+            <article class="glass-card">
+              <h3>Infrastructure</h3>
+              <p>Critical digital and physical infrastructure supporting sustained demand.</p>
+            </article>
+            <article class="glass-card">
+              <h3>Financial Services</h3>
+              <p>Modernized financial rails and workflows with durable user utility.</p>
+            </article>
+            <article class="glass-card">
+              <h3>Special Situations</h3>
+              <p>Selective opportunities where complexity creates differentiated entry.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container fade-in">
+          <p class="section-kicker">Operating Style</p>
+          <h2>Principles that shape every decision.</h2>
+          <div class="principles-grid" role="list" aria-label="Nahal Ventures principles">
+            <div role="listitem">Long-term horizon</div>
+            <div role="listitem">Selective deployment</div>
+            <div role="listitem">Independent thinking</div>
+            <div role="listitem">Deep research</div>
+            <div role="listitem">Partnership mindset</div>
+            <div role="listitem">Flexible mandate</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container contact-wrap fade-in">
+          <div>
+            <p class="section-kicker">Contact</p>
+            <h2>General inquiries.</h2>
+            <p>
+              For investor or partnership inquiries, please submit a note and our team will
+              respond as appropriate.
+            </p>
+            <p class="contact-email">contact@nahalventures.com</p>
+          </div>
+          <form class="contact-form" action="#" method="post">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit" class="btn btn-primary">Send Inquiry</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <span>© <span id="year"></span> Nahal Ventures LLC</span>
+        <a href="investor-login.html">Investor Login</a>
+      </div>
+    </footer>
+  </body>
 </html>
