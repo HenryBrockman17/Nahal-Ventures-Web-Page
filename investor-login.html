@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Investor access portal for Nahal Ventures." />
+    <title>Investor Login | Nahal Ventures</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="login-body">
+    <main class="login-main">
+      <a href="main.html" class="brand login-brand" aria-label="Return to Nahal Ventures home">
+        <img src="Img/logo.png" alt="Nahal Ventures logo" class="brand-logo" />
+        <span class="brand-wordmark">Nahal Ventures</span>
+      </a>
+
+      <section class="login-card" aria-labelledby="investor-login-title">
+        <p class="eyebrow">Private Portal</p>
+        <h1 id="investor-login-title">Investor Login</h1>
+        <p class="login-copy">
+          This secure portal is reserved for authorized investors. Please sign in to view
+          account documents and reporting materials.
+        </p>
+
+        <form class="contact-form" action="#" method="post">
+          <label for="investor-email">Email</label>
+          <input id="investor-email" name="email" type="email" autocomplete="email" required />
+
+          <label for="investor-password">Password</label>
+          <input
+            id="investor-password"
+            name="password"
+            type="password"
+            autocomplete="current-password"
+            required
+          />
+
+          <button type="submit" class="btn btn-primary">Sign In</button>
+        </form>
+
+        <div class="login-links">
+          <a href="#">Forgot password?</a>
+          <a href="#">Request access</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
