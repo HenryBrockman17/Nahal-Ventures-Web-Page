@@ -1,6 +1,6 @@
 # Nahal Ventures Website
 
-Premium dark-themed static website for **Nahal Ventures** (private investment company / family office), including:
+Premium dark-themed static website for **Nahal Ventures** (private investment vehicle / family office), including:
 
 - Main landing page (`main.html`)
 - Separate investor login page (`investor-login.html`)
